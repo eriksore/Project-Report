@@ -1,0 +1,117 @@
+\documentclass{MScthesisITEM}
+
+% this package is just to generate text for demo-purposes
+\makeindex
+\usepackage{blindtext}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage[nomain,acronym,xindy,toc]{glossaries}
+			
+\hypersetup{
+    colorlinks=true, %set true if you want colored links
+    linktoc=all,     %set to all if you want both sections and subsections linked
+    linkcolor=blue,  %choose some color if you want links to stand out
+    citecolor=blue,
+    filecolor=blue,
+    urlcolor=blue,
+}
+
+
+\title{Evaluating Software Defined Networking for use in military networks} % The title of your assignement; NB use \newlinetitle to start a newline
+\author{Erik Sørensen} % Your firstname and lastname
+\professor{Øyvind Kure, ITEM/UNIK} % Affiliation = ITEM for instance
+\supervisor{Mariann Hauge, FFI}
+
+%% Uncomment the following in case you want subfigures; note that there will be a warning for the caption package
+% \let\subcaption\undefined
+% \let\subfloat\undefined
+% \usepackage[bf]{caption}
+% \usepackage{subcaption}
+
+\DeclareGraphicsExtensions{.pdf,.jpg}
+\graphicspath{{./figs/}}
+
+\loadglsentries{glossary}
+\makeglossaries
+
+\begin{document}
+\selectlanguage{english}
+\pagenumbering{roman}
+\pagestyle{plain}
+
+%% Only for the project
+\titleITEM
+
+%% Only for the master's thesis; for the project report the description is taken from It's Learning and added by the department
+% \selectlanguage{english} % Change to 'norsk' if you are writing in Norwegian
+% \input{problem_description}
+% \cleardoublepage
+
+%% There must be an abstract in English, even though the main text is in Norwegian
+\selectlanguage{english}
+\include{abstract_english}
+\cleardoublepage
+
+%% Only for the master's thesis; if the main text is in English and you can write Norwegian, there must be an abstract in Norwegian as well.A
+% \selectlanguage{norsk}
+% \include{abstract_norwegian}
+% \cleardoublepage
+
+\selectlanguage{english}% Change to 'norsk' if you are writing in Norwegian
+
+\include{preface}
+\cleardoublepage
+
+% similarly you may add a separate acknowledgments page
+
+\tableofcontents*
+\cleardoublepage
+
+%% include if relevant
+\listoffigures
+\cleardoublepage
+
+%% include if relevant
+\listoftables
+\cleardoublepage
+
+%% include if relevant
+%\listofalgorithms
+%\addcontentsline{toc}{chapter}{List of Algorithms}
+%\cleardoublepage
+
+%% include if relevant
+%\printglossary[title=List of Symbols, style=long]
+%\cleardoublepage
+%\glsaddall[]
+%% include if relevant
+%\printglossary[title=List of Acronyms,type=\acronymtype]% prints just the list of acronyms
+\printglossaries
+\cleardoublepage
+
+\pagenumbering{arabic}
+\pagestyle{ruled}
+%\include{example_chapter}
+\include{background}
+\include{discussion}
+\include{results}
+\include{conclusion}
+%% include here the other chapters
+
+\renewcommand*{\bibname}{References}
+\bibliography{bibtex_db_project}
+\bibliographystyle{alpha}
+
+
+%% Uncomment the following if you have any appendix
+% \appendix
+% \addtocontents{toc}{%
+%  \protect\vspace{1em}% 
+%  \protect\noindent \bfseries \appendixtocname\protect\par
+%  \protect\vspace{-.5em}%
+% }
+% \renewcommand{\chaptername}{\appendixname}
+%% include below possible appendices (chapters)
+
+
+\end{document} 
