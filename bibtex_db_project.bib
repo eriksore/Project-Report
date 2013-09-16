@@ -14,6 +14,40 @@
   url = {http://frenetic-lang.org/publications/composing-nsdi13.pdf}
 }
 
+@MANUAL{OF1.4,
+  title = {OpenFlow Switch Specification Version 1.4.0 (Wire Protocol 0x05)},
+  author = {Open Networking Foundation},
+  organization = {Open Networking Foundation},
+  month = {August},
+  year = {2013},
+  file = {:/Users/Erik/Google Drive/Semester-3/Project/Papers and Journals/OpenFlow Switch Specification Version 1.4.0.pdf:PDF},
+  owner = {Erik},
+  timestamp = {2013.09.16},
+  url = {https://www.opennetworking.org/images/stories/downloads/sdn-resources/onf-specifications/openflow/openflow-spec-v1.4.0.pdf}
+}
+
+@ARTICLE{Gu08,
+  author = {Gude, Natasha and Koponen, Teemu and Pettit, Justin and Pfaff, Ben
+	and Casado, Mart\'{\i}n and McKeown, Nick and Shenker, Scott},
+  title = {NOX: towards an operating system for networks},
+  journal = {SIGCOMM Comput. Commun. Rev.},
+  year = {2008},
+  volume = {38},
+  pages = {105--110},
+  number = {3},
+  month = jul,
+  acmid = {1384625},
+  address = {New York, NY, USA},
+  doi = {10.1145/1384609.1384625},
+  file = {:/Users/Erik/Google Drive/Semester-3/Project/Papers and Journals/NOX- Towards an Operating System for Networks.pdf:PDF},
+  issn = {0146-4833},
+  issue_date = {July 2008},
+  keywords = {architecture, management, network, security},
+  numpages = {6},
+  publisher = {ACM},
+  url = {http://doi.acm.org/10.1145/1384609.1384625}
+}
+
 @CONFERENCE{LGS12,
   author = {Luca Veltri, Giacomo Morabito, Stefano Salsano, Nicola Blefari-Melazzi,
 	Andrea Detti},
@@ -42,6 +76,76 @@
   owner = {Erik},
   timestamp = {2013.09.15},
   url = {http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6364916&tag=1}
+}
+
+@ARTICLE{Me13,
+  author = {Marc Mendonca, Bruno Astuto A. Nunes, Xuan-Nam Nguyen, Katia Obraczka,
+	Thierry Turletti},
+  title = {A Survey of Software-Deﬁned Networking: Past,
+	
+	Present, and Future of Programmable Networks},
+  journal = {In Submission (2013)},
+  year = {2013},
+  abstract = {The idea of programmable networks has recently regained considerable
+	momentum due to the emergence of the
+	
+	Software-Deﬁned Networking (SDN) paradigm. SDN, often referred to
+	as a “radical new idea in networking”, promises to dramatically simplify
+	network management and enable innovation
+	
+	through network programmability. This paper surveys the stateof-the-art
+	in programmable networks with an emphasis on SDN.
+	
+	We provide a historic perspective of programmable networks
+	
+	from early ideas to recent developments. Then we present the
+	
+	SDN architecture and the OpenFlow standard in particular,
+	
+	discuss current alternatives for implementation and testing SDNbased
+	protocols and services, examine current and future SDN
+	
+	applications, and exp},
+  file = {:/Users/Erik/Google Drive/Semester-3/Project/Papers and Journals/A Survey of Software-Deﬁned Networking- Past, Present, and Future of Programmable Networks.pdf:PDF},
+  keywords = {Programmable Networks, Software Defined Networking (SDN)},
+  owner = {Erik},
+  timestamp = {2013.09.15},
+  url = {http://hal.inria.fr/docs/00/83/50/14/PDF/bare_jrnl.pdf}
+}
+
+@ARTICLE{Ca13,
+  author = {Marco Canini, Petr Kuznetsov, Dan Levin, Stefan Schmid},
+  title = {The Case for Reliable Software Transactional Networking},
+  journal = {arXiv preprint arXiv:1305.7429},
+  year = {2013},
+  abstract = {Software-defined networking (SDN) is a novel paradigm that out-sources
+	the control of packet-forwarding switches to a set of software controllers.
+	The most fundamental task of these controllers is the correct implementation
+	of the network policy, i.e., the intended network behavior. In essence,
+	such a policy specifies the rules by which packets must be forwarded
+	across the network. This paper initiates the study of the SDN control
+	plane as a distributed system. 
+	
+	We introduce a formal model describing the interaction between the
+	data plane and a distributed control plane (consisting of a collection
+	of fault-prone controllers). Then we formulate the problem of consistent
+	composition of concurrent network policy updates. The composition
+	is enabled via a transactional interface with all-or-nothing semantics.
+	The system behaves as though committed updates are installed atomically
+	and every data packet traverses the network instantaneously, respecting
+	a sequential composition of previously installed committed updates.
+	Updates that cannot be composed are aborted and do not affect the
+	data plane. 
+	
+	We show that in the asynchronous environment, it is impossible to
+	achieve consistent policy composition that tolerates a single controller
+	crash. We then discuss stronger variants of the model that allow
+	for solving the problem and study algorithmic complexities of such
+	solutions.},
+  file = {:/Users/Erik/Google Drive/Semester-3/Project/Papers and Journals/The Case for Reliable Software Transactional Networking.pdf:PDF},
+  owner = {Erik},
+  timestamp = {2013.09.16},
+  url = {http://arxiv.org/abs/1305.7429}
 }
 
 @ARTICLE{MK08,

@@ -1,12 +1,14 @@
 \documentclass{MScthesisITEM}
-
-% this package is just to generate text for demo-purposes
-\makeindex
 \usepackage{blindtext}
 \usepackage[utf8]{inputenc}
 \usepackage{hyperref}
-\usepackage[nomain,acronym,xindy,toc]{glossaries}
-			
+\usepackage[
+nonumberlist, %do not show page numbers
+acronym,      %generate acronym listing
+toc,          %show listings as entries in table of contents
+section]      %use section level for toc entries
+{glossaries}
+		
 \hypersetup{
     colorlinks=true, %set true if you want colored links
     linktoc=all,     %set to all if you want both sections and subsections linked
@@ -15,6 +17,13 @@
     filecolor=blue,
     urlcolor=blue,
 }
+%Remove the dot at the end of glossary descriptions
+\renewcommand*{\glspostdescription}{}
+\loadglsentries{glossary}
+\makeglossaries
+
+%These commands sort the lists
+%makeindex -s projectreport_eriksore.ist -t projectreport_eriksore.alg -o projectreport_eriksore.acr projectreport_eriksore.acn|makeindex -s projectreport_eriksore.ist -t projectreport_eriksore.glg -o projectreport_eriksore.gls projectreport_eriksore.glo|makeindex -s fprojectreport_eriksore.ist -t projectreport_eriksore.slg -o projectreport_eriksore.syi projectreport_eriksore.syg|
 
 
 \title{Evaluating Software Defined Networking for use in military networks} % The title of your assignement; NB use \newlinetitle to start a newline
@@ -31,8 +40,6 @@
 \DeclareGraphicsExtensions{.pdf,.jpg}
 \graphicspath{{./figs/}}
 
-\loadglsentries{glossary}
-\makeglossaries
 
 \begin{document}
 \selectlanguage{english}
@@ -76,31 +83,27 @@
 \cleardoublepage
 
 %% include if relevant
-%\listofalgorithms
-%\addcontentsline{toc}{chapter}{List of Algorithms}
-%\cleardoublepage
+\listofalgorithms
+\addcontentsline{toc}{chapter}{List of Algorithms}
+\cleardoublepage
 
-%% include if relevant
-%\printglossary[title=List of Symbols, style=long]
-%\cleardoublepage
-%\glsaddall[]
-%% include if relevant
-%\printglossary[title=List of Acronyms,type=\acronymtype]% prints just the list of acronyms
+%Print list of acronyms
 \printglossaries
+\addcontentsline{toc}{chapter}{List of Acronyms}
 \cleardoublepage
 
 \pagenumbering{arabic}
 \pagestyle{ruled}
-%\include{example_chapter}
+
 \include{background}
 \include{discussion}
 \include{results}
 \include{conclusion}
-%% include here the other chapters
+
 
 \renewcommand*{\bibname}{References}
 \bibliography{bibtex_db_project}
-\bibliographystyle{alpha}
+\bibliographystyle{apalike}
 
 
 %% Uncomment the following if you have any appendix

@@ -264,13 +264,13 @@
   \setlength{\itemindent}{-0.5em}% 
   \addtolength{\itemindent}{\labelsep}}
   
-% Glossary; undefine some commands from memoir.cls to avoid generating warnings
-\let\theglossary\@undefined
-\let\endtheglossary\@undefined  
-\let\printglossary\undefined
-\let\glossarymark\undefined
-\RequirePackage[nonumberlist,toc,acronym,xindy]{glossaries}
-\renewcommand\@pnumwidth{2em} % adjust page number column width
+% Glossary; undefine some commands from memoir.cls to avoid generating warnings%
+%\let\theglossary\@undefined
+%\let\endtheglossary\@undefined  
+%\let\printglossary\undefined
+%\let\glossarymark\undefined
+%\RequirePackage[nonumberlist,toc,acronym,xindy]{glossaries}
+%\renewcommand\@pnumwidth{2em} % adjust page number column width
 
 % Language
 \RequirePackage[english,norsk]{babel}

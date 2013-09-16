@@ -1,28 +1,27 @@
-\newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{MAB{\etalchar{+}}08}
+\begin{thebibliography}{}
 
-\bibitem[CM13]{Mo13}
-Nate Foster Jennifer Rexford David~Walker Christopher~Monsanto, Joshua~Reich.
+\bibitem[Christopher~Monsanto, 2013]{Mo13}
+Christopher~Monsanto, Joshua~Reich, N. F. J. R. D.~W. (2013).
 \newblock Composing software-defined networks.
 \newblock In {\em USENIX Symposium on Networked Systems Design and
-  Implementation (NSDI)}, 2013.
+  Implementation (NSDI)}.
 
-\bibitem[MAB{\etalchar{+}}08]{MK08}
-Nick McKeown, Tom Anderson, Hari Balakrishnan, Guru Parulkar, Larry Peterson,
-  Jennifer Rexford, Scott Shenker, and Jonathan Turner.
+\bibitem[McKeown et~al., 2008]{MK08}
+McKeown, N., Anderson, T., Balakrishnan, H., Parulkar, G., Peterson, L.,
+  Rexford, J., Shenker, S., and Turner, J. (2008).
 \newblock Openflow: enabling innovation in campus networks.
-\newblock {\em SIGCOMM Comput. Commun. Rev.}, 38(2):69--74, March 2008.
+\newblock {\em SIGCOMM Comput. Commun. Rev.}, 38(2):69--74.
 
-\bibitem[MOT12]{Me12}
-Marc Mendonca, Katia Obraczka, and Thierry Turletti.
+\bibitem[Mendonca et~al., 2012]{Me12}
+Mendonca, M., Obraczka, K., and Turletti, T. (2012).
 \newblock The case for software-defined networking in heterogeneous networked
   environments.
 \newblock In {\em Proceedings of the 2012 ACM conference on CoNEXT student
-  workshop}, CoNEXT Student '12, pages 59--60, New York, NY, USA, 2012. ACM.
+  workshop}, CoNEXT Student '12, pages 59--60, New York, NY, USA. ACM.
 
-\bibitem[Sta13]{St13}
-William Stallings.
+\bibitem[Stallings, 2013]{St13}
+Stallings, W. (2013).
 \newblock Software-defined networks and openflow.
-\newblock {\em The Internet Protocol Journal}, 16(1):2--14, March 2013.
+\newblock {\em The Internet Protocol Journal}, 16(1):2--14.
 
 \end{thebibliography}
